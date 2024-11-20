@@ -23,7 +23,7 @@ class UserAdmin(BaseUserAdmin):
             }
         ),
         (
-            _('Important dates'), 
+            _('Important dates'),
             {
                 'fields': (
                     'last_login',
@@ -37,8 +37,8 @@ class UserAdmin(BaseUserAdmin):
             None, {
                 'classes': ('wide',),
                 'fields': (
-                    'email', 
-                    'password1', 
+                    'email',
+                    'password1',
                     'password2',
                     'name',
                     'is_active',
