@@ -20,7 +20,7 @@ class UserManager(BaseUserManager):
         user.save(using=self._db)
 
         return user
-    
+
     def create_superuser(self, email, password):
         """Create and return a new supersuser"""
         user = self.create_user(email, password)
@@ -29,8 +29,6 @@ class UserManager(BaseUserManager):
         user.save(using=self._db)
 
         return user
-
-
 
 
 class User(AbstractBaseUser, PermissionsMixin):
